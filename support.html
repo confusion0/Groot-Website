@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="1ZL-vuOLAgjIHA6x_MCzjsNQQUetmT00dJUgTag-Yzo" />
+  <title>Home - Groot</title>
+
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/support.css">
+  <link rel="stylesheet" href="./css/msgbox.css">
+  <link rel=stylesheet href="./css/highlight/styles/atom-one-dark-reasonable.css">
+  </link>
+  <script src="./css/highlight/highlight.pack.js"></script>
+  <script src="./css/mark.min.js"></script>
+  <script src="./js/msgbox.js"></script>
+  <script src="./js/home.js"></script>
+  <script src="./js/support.js"></script>
+  <script src="https://kit.fontawesome.com/ed4599c3e0.js" crossorigin="anonymous"></script>
+  <script>hljs.highlightAll();</script>
+  <link rel="icon" href="./images/groot.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+    window.onbeforeunload = function () {
+      var input = document.getElementById("textarea").value
+      if (input == '') {
+        return
+      }
+      return 'Are you really want to perform the action?';
+    }
+  </script>
+</head>
+
+<body>
+  <button class="backToTop" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+  <section class="navbar">
+    <ul class=navbar-contents>
+
+      <a href="index.html" class="btn"><i class="fas fa-home"></i> Home</a>
+      <a href="support.html" class="btn"><i class="fas fa-ticket-alt"></i> Support</a>
+      <li style="float:right">
+        <input id=searchBar class="searchbar btn show" autocomplete="off" type="text" name="search"
+          placeholder="Search..">
+        <button id=showSearch class="btn show">
+          <i class="fas fa-search"></i>
+        </button>
+        <a href="https://discord.gg/ANbxZmqyK5" target="_blank" alt="Groot Support Server" class="btn"
+          style=border-radius:50%>
+          <i class="fab fa-discord"></i>
+        </a>
+        <a href="https://github.com/dank-tagg/Groot" target="_blank" class="btn">
+          <i class="fas fa-code"></i>
+          Source
+        </a>
+        <button class="btn" id="theme-switcher">
+          <i class="fas fa-moon"></i>
+          Switch theme
+        </button>
+      </li>
+    </ul>
+  </section>
+  <section id="main-content" class="main-content" style="margin-top: 2em;">
+    <div id="msgbox-area" class="msgbox-area"></div>
+    <div id="msgbox-container">
+    <h2 id="groot">Support </h2>
+    <p>If you want a template you can look <a href="https://gist.github.com/dank-tagg/4ce24a641ea095ee3d8e4f98adc40264"
+        target="_blank">here</a></p>
+    
+    <textarea id=supportName class=textarea name="supportName" rows="1" cols="100" placeholder="Your discord name, ID or email."></textarea>
+    <textarea id=supportMsg class=textarea name="supportMsg" rows="10" cols="100" placeholder="Write your message here..."></textarea>
+    <p id=errorMsg class="hide" style="font-size: smaller;color:red">Your message must be in between 50 characters and 1500 characters!</p>
+    <p id=nameErrorMsg class="hide" style="font-size: smaller;color:red">There must be a valid email/discord ID! </p>
+    <p id=noTypeError class="hide" style="font-size: smaller;color:red">You must choose a valid type of support! </p>
+    <button id=submitBtn class=btn style="border-radius: 15px;">Submit</button>
+    <select id=type class=btn style="border-radius: 15px;">
+      <option value="" disabled="" selected="">Type of support</option>
+      <option>General support</option>
+      <option>Appeal</option>
+      <option>Bug report</option>
+    </select>
+  </div>
+    
+  </section>

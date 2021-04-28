@@ -21,15 +21,11 @@
   <button class="backToTop" title="Go to top"><i class="fas fa-chevron-up"></i></button>
   <section class="navbar">
     <ul class=navbar-contents>
-      <a><i class="fas fa-bars"></i></a>
-      <a href=#groot />Home</a>
-      <a href=#usage />Usage</a>
-      <a href=#features />Features</a>
-      <a href=#how-do-i-contribute />Contributing</a>
-      <a href=#contact-me />Contact</a>
-      <a href=#links />Links</a>
-      <li style="float:right">
-        <input id=searchBar class="searchbar btn show" type="text" name="search" placeholder="Search..">
+      <a href="index.html" class="btn"><i class="fas fa-home"></i> Home</a>
+      <a href="support.html" class="btn"><i class="fas fa-ticket-alt"></i> Support</a>
+      <li style="float:right;margin-right:1em;">
+        <input id=searchBar class="searchbar btn show" autocomplete="off" type="text" name="search"
+          placeholder="Search..">
         <button id=showSearch class="btn show">
           <i class="fas fa-search"></i>
         </button>
@@ -49,12 +45,19 @@
     </ul>
   </section>
   <section class="page-header">
-    <h1 class="project-name">Groot Discord Bot</h1>
-    <h2 class="project-tagline">A multipurpose discord bot.</h2>
+    <h1 class="project-name">A simple but yet <br /> feature-rich discord bot</h1>
+    <h2 class="project-tagline">
+      Features moderation, economy and utility commands.
+    </h2>
     <a href="https://discord.com/oauth2/authorize?client_id=812395879146717214&scope=bot" target="_blank" class="btn"
       style="background-color:linear-gradient(120deg, var(--theme-links), var(--theme-headers));color:#ffffff">
-      Get started
+      <i class="fas fa-play"></i> Get Started
     </a>
+    <a href="https://discord.gg/ANbxZmqyK5" target="_blank" alt="Groot Support Server" class="btn"
+      style="background-color:linear-gradient(120deg, var(--theme-links), var(--theme-headers));color:#ffffff">
+      <i class="fab fa-discord"></i> Support Server
+    </a>
+    <img class=content-desktop src="./images/code.png"></img>
   </section>
   <section id="main-content" class="main-content">
     <h1 id="groot">Groot </h1>
@@ -137,7 +140,7 @@ My discord is anUser#6969, you can ask me about it there.
       </div>
     </div>
     <p>
-      <strong>Note that this is not required. It can also be pseudocode, and a small explaination.</strong>
+      <strong>Note that this is not required. It can also be pseudocode, and a small explanation.</strong>
     </p>
     <p>
       For more information, contact me on discord.<br />
@@ -226,7 +229,6 @@ SOFTWARE.</code></pre>
         <a href="https://github.com/dank-tagg/Groot" target="_blank">Groot</a>
         is
         maintained by <a href="https://github.com/dank-tagg" target="_blank">dank-tagg</a>
-        .
       </span>
       <span class="site-footer-credits">© 2021 Groot </span>
     </footer>
