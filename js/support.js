@@ -37,17 +37,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }, 3000);
 
             const request = new XMLHttpRequest()
-            const webhook = "https://discord.com/api/webhooks/831121674165420032/n-vB6ISc94kqpZ3cXK0DDc8aY6dOImhLXu62a5MEGlw5CIo5MK_2I-rCTYNHVCMaI3Jt"
+            const webhook = "https://discord.com/api/webhooks/838006978768928778/n6zowoP5emWlyFHR1q-NmDKrLwmkDac5wzebPFyKlR3IOmx8lDl6-SmkCabTpAnopKzz"
             request.open("POST", webhook)
-            request.setRequestHeader("content-type", "applications/json")
+            request.setRequestHeader('Content-type', 'application/json');
             var content = {
                 username: "Support Notifications",
-                content: null,
-                avatar_url: "https://images-ext-2.discordapp.net/external/exz_9a1lD3RO0yxVj_Q2R8Imy4bpFi7gO8yxcs0v90w/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/812395879146717214/8a16fab9ec3c48bf12d18d7736a36a9f.webp?width=609&height=609",
+                avatar_url: "https://cdn.discordapp.com/avatars/812395879146717214/8a16fab9ec3c48bf12d18d7736a36a9f.png?size=128",
                 embeds: [{
                     title: type,
                     description: input,
-                    footer: { text: name },
+                    footer: { text: `Author: ${name}` },
                     url: "https://github.com/dank-tagg/Groot"
                 }]
             }
